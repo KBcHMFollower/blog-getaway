@@ -1,0 +1,7 @@
+varsion: "3"
+
+tasks:
+  dev:
+    desc: "run app"
+    cmds:
+      - go run ./cmd/golang-plate --config=config/local.yaml
