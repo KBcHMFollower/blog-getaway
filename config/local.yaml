@@ -1,6 +1,11 @@
 env: "local"
-storage_path: "./storage/storage.db"
 http_server:
+  public_url: "http://localhost:8082"
   address: "localhost:8082"
   timeout: 4s
   iddle_timeout: 60s
+grpc_services:
+  user_service:
+    addr: "localhost:44044"
+  post_service:
+    addr: "localhost:4041"
