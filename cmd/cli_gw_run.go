@@ -39,6 +39,6 @@ func init() {
 			log.Info("server stopped")
 		},
 	}
-	runCmd.Flags().StringVar(&argConfigPath, "cfg", "config/local.yaml", "path to config")
+	runCmd.Flags().StringVar(&argConfigPath, "cfg", "", "path to config")
 	rootCmd.AddCommand(runCmd)
 }

@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build -o getaway cmd/init.go
+RUN go build -o getaway ./cmd
 
 CMD ["./getaway", "run-gw", "--cfg=config/prod.yaml"]
