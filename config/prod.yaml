@@ -1,0 +1,11 @@
+env: "prod"
+http_server:
+  public_url: "http://getaway:8082"
+  address: "getaway:8082"
+  timeout: 4s
+  iddle_timeout: 60s
+grpc_services:
+  user_service:
+    addr: "users-service:44044"
+  post_service:
+    addr: "posts-service:4041"

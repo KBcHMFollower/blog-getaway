@@ -6,4 +6,4 @@ COPY . .
 
 RUN go build -o getaway cmd/init.go
 
-CMD ["./getaway run-gw --config=config/config.yaml"]
+CMD ["./getaway run-gw --cfg=config/prod.yaml"]
